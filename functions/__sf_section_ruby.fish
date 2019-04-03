@@ -12,7 +12,7 @@ function __sf_section_ruby -d "Show current version of Ruby"
 	__sf_util_set_default SPACEFISH_RUBY_SHOW true
 	__sf_util_set_default SPACEFISH_RUBY_PREFIX $SPACEFISH_PROMPT_DEFAULT_PREFIX
 	__sf_util_set_default SPACEFISH_RUBY_SUFFIX $SPACEFISH_PROMPT_DEFAULT_SUFFIX
-	__sf_util_set_default SPACEFISH_RUBY_SYMBOL "💎 "
+	__sf_util_set_default SPACEFISH_RUBY_SYMBOL \uf43b
 	__sf_util_set_default SPACEFISH_RUBY_COLOR red
 
 	# ------------------------------------------------------------------------------
@@ -53,6 +53,6 @@ function __sf_section_ruby -d "Show current version of Ruby"
 	__sf_lib_section \
 		$SPACEFISH_RUBY_COLOR \
 		$SPACEFISH_RUBY_PREFIX \
-		"$SPACEFISH_RUBY_SYMBOL""$ruby_version" \
+		$SPACEFISH_RUBY_SYMBOL" $ruby_version" \
 		$SPACEFISH_RUBY_SUFFIX
 end
